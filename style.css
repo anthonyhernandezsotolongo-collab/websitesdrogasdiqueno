@@ -1,0 +1,225 @@
+/* Estilos generales */
+body {
+    color: #1d1d10;
+    background: #c7bba7;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Header con logo y menú */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Titulos 1*/
+.tit1 {
+    color: #f4ff72;
+    text-shadow: 2px 2px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+/* Menú */
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #f4ff72;
+}
+
+/* Botón hamburguesa oculto en escritorio */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1d1d10;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .menu li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+
+/* Contenedor principal */
+.contenedor1 {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: space-between;
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    padding: 20px;
+}
+
+/* Texto */
+.texto {
+    flex: 1;
+    text-align: center;
+    /* Centra horizontalmente el texto */
+    padding: 20px;
+}
+
+.texto h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+.texto p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Imagen */
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+}
+
+.caratula {
+    width: 200px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.caratula img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.caratula p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.caratula:hover {
+    transform: scale(1.1);
+    background-color: #ffcc00;
+    /* Cambia este color a tu preferencia */
+}
+
+
+
+.contenedor3 {
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imagen {
+    flex: 1;
+    text-align: left;
+}
+
+.texto {
+    flex: 1;
+    text-align: center;
+    /* centra horizontalmente el texto */
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    /* texto a la izquierda, logo a la derecha */
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    border-top: 1px solid #ccc;
+}
+
+.footer-texto {
+    text-align: left;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-logo img {
+    max-height: 50px;
+}
